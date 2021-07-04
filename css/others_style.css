@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Source Sans Pro', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height:1.7;
+    color: black;
+}
+/*下からフェードインするアニメーション*/
+body {
+    opacity: 0;
+    animation-name: fadein-bottom;
+    animation-duration: 2s;               /*時間*/
+    animation-timing-function: ease-out;    /*おわりゆっくり動かす*/
+    animation-fill-mode: forwards;          /*おわった後はそのままキープ*/
+    animation-delay: 1s;                    /*フェードインのタイミング指定*/
+ }
+ @keyframes fadein-bottom {
+    0% {                                    /*開始時の状態*/
+       opacity: 0;                          /*透明度指定*/
+       transform: translateY(20px);         /*下に20pxずれた状態*/
+    }
+    100% {                                  /*終了時の状態*/
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:gray;
+}
+img{
+    max-width: 100%;
+}
+
+/*ヘッダー*/
+.home-button{
+    font-size: 1rem;
+    margin-top: 34px;
+}
+
+.main-nav{
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: black;
+}
+.main-nav a:hover{
+    color:gray;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/*HOME*/
+.home-content{
+    text-align: center;
+    margin-top: 5%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0%;
+    max-width: 80%;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.item{
+    margin: 10%;
+    width: 200px; height: 200px;
+    object-fit: cover;
+}
+/*lightbox拡大画像の白枠設定*/
+.lightbox .lb-container { padding: 1px; }
+
+/*見出し*/
+.page-title {
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    font-family: 'Source Sans Pro', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-bottom: 2px solid gray;
+}
+
+
+/*フッター*/
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 5%;
+}
+footer p{
+    color: black;
+    font-size: 0.875rem;
+}
+
+
