@@ -13,34 +13,6 @@ img {
   font-weight: normal;
 }
 
-/* 本文の位置設定 */
-#main {
-    text-align: center;
-    margin-top: 20rem;
-    z-index: 10;
-    position: relative; /*z-indexを使うため*/
-}
-#main p{
-    font-size: 1.125rem;
-    margin:10px 0 42px;
-}
-.page-title {
-    font-size: 2rem;
-    font-family: 'Source Sans Pro', serif;
-    text-transform: uppercase;
-    font-weight: normal;
-}
-/*大きな背景写真*/
-.big-bg{
-    background-size: cover;
-    background-position: center top;
-}
-#home{
-    background-image: url(../images/index_images/index1.jpg);
-    height: 60rem;
-    overflow: hidden;
-}
-
 /* チェックボックスを非表示 */
 #navi input {
   display: none;
@@ -388,6 +360,35 @@ img {
   }
 }
 
+
+/* 本文の位置設定 */
+#main {
+  text-align: center;
+  margin-top: 20rem;
+  z-index: 10;
+  position: relative; /*z-indexを使うため*/
+}
+#main p{
+  font-size: 1.125rem;
+  margin:10px 0 42px;
+}
+.page-title {
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/*大きな背景写真*/
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+}
+#home{
+  background-image: url(../images/index_images/index1.jpg);
+  height: 60rem;
+  overflow: hidden;
+}
+
 /*フッター*/
 footer {
   background-color: #222;
@@ -420,3 +421,4 @@ footer p{
      transform: translateY(0);
   }
 }
+
