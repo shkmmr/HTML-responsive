@@ -13,6 +13,13 @@ img {
   font-weight: normal;
 }
 
+/*ヘッダー*/
+/*展開したメニューがmainより上に来るようにする*/
+header {
+  z-index: 20;
+  position: relative;
+}
+
 /* チェックボックスを非表示 */
 #navi input {
   display: none;
@@ -163,11 +170,6 @@ img {
 
 /* スマホ用レイアウト1 */
 @media screen and (max-width: 620px) {
-  /*展開したメニューがmainより上に来るようにする*/
-  header {
-    z-index: 20;
-    position: relative;
-  }
   #main h2 {
     font-size: 1.3rem;
   }
